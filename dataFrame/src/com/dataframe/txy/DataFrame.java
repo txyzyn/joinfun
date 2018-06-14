@@ -21,6 +21,7 @@ public class DataFrame {
         for(Tuple2<?, ?> t:dtypes){
             if(t._2().equals("String")){
             	System.out.println("string");
+                System.out.println("agg");
             }
         }
     }
