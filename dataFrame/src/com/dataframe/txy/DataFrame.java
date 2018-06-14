@@ -18,9 +18,9 @@ public class DataFrame {
         df.createOrReplaceTempView("people");
         spark.sql("SELECT * FROM global_temp.people").show();
         Tuple2<String, String>[] dtypes = df.dtypes();
-        for(Tuple2 t:dtypes){
+        for(Tuple2<?, ?> t:dtypes){
             if(t._2().equals("String")){
-
+            	System.out.println("string");
             }
         }
     }
