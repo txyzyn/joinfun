@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+ <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>Txy0904</value>
+  </property>
+<property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://192.168.31.128:3306/hive?useSSL=false</value>
+  </property>
+<property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>root</value>
+  </property>
+<property>
+    <name>javax.jdo.option.ConnectionuseSSL</name>
+    <value>true</value>
+  </property>
+<property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.jdbc.Driver</value>
+  </property>
+<property>
+    <name>datanucleus.schema.autoCreateAll</name>
+    <value>true</value>
+ </property>
+<property>
+    <name>hive.metastore.schema.verification</name>
+    <value>false</value>
+  </property>
+<property>
+    <name>hive.metastore.warehouse.dir</name>
+    <value>/hadoop/apache-hive-3.0.0-bin/warehouse</value>
+    <description>location of default database for the warehouse</description>
+</property>
+<!--hive on spark or spark on yarn -->
+<property>
+<name>hive.execution.engine</name>
+<value>spark</value>
+</property>
+<property>
+<name>spark.home</name>
+<value>/tools/spark-2.3.0-bin-hadoop2.7</value>
+</property>
+<property>
+<name>spark.master</name>
+<value>spark://master:7077</value> 
+</property>
+<property> 
+<name>spark.submit.deployMode</name> 
+<value>client</value> 
+</property>
+<property>
+<name>spark.eventLog.enabled</name>
+<value>true</value>
+</property>
+<property>
+<name>spark.eventLog.dir</name>
+<value>hdfs://master:9000/spark-log</value>
+</property>
+<property>
+<name>spark.serializer</name>
+<value>org.apache.spark.serializer.KryoSerializer</value>
+</property>
+<property>
+<name>spark.executor.memeory</name>
+<value>512m</value>
+</property>
+<property>
+<name>spark.driver.memeory</name>
+<value>512m</value>
+</property>
+<property>
+<name>spark.executor.extraJavaOptions</name>
+<value>-XX:+PrintGCDetails -Dkey=value -Dnumbers="one two three"</value>
+</property>
+<property>
+<name>hive.execution.engine</name>
+<value>spark</value>
+</property>
+
+</configuration>

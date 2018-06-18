@@ -2,6 +2,12 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/data_frame"/>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/kafka"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spark"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hbase"/>
+	<classpathentry kind="lib" path="G:/joinfun/workspace/lib/streaming_sparksql_hbase/spark-streaming_2.10-1.5.1.jar"/>
+	<classpathentry kind="lib" path="G:/joinfun/workspace/lib/streaming_sparksql_hbase/spark-streaming-kafka_2.10-1.5.1.jar"/>
+	<classpathentry kind="lib" path="G:/joinfun/workspace/lib/streaming_sparksql_hbase/spark-streaming-kafka-0-10_2.11-2.3.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
